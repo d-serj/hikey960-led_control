@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ToggleButton
+        android:id="@+id/led1"
+        android:layout_width="204dp"
+        android:layout_height="83dp"
+        android:text="ToggleButton"
+        android:textOff="Led1 OFF"
+        android:textOn="Led1 ON"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="144dp" />
+
+    <ToggleButton
+        android:id="@+id/led3"
+        android:layout_width="204dp"
+        android:layout_height="83dp"
+        android:text="ToggleButton"
+        android:textOff="Led3 OFF"
+        android:textOn="Led3 ON"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="227dp" />
+
+    <ToggleButton
+        android:id="@+id/led2"
+        android:layout_width="204dp"
+        android:layout_height="83dp"
+        android:text="ToggleButton"
+        android:textOff="Led2 OFF"
+        android:textOn="Led2 ON"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="144dp" />
+
+    <ToggleButton
+        android:id="@+id/led4"
+        android:layout_width="204dp"
+        android:layout_height="83dp"
+        android:text="ToggleButton"
+        android:textOff="Led4 OFF"
+        android:textOn="Led4 ON"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="227dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="275dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Hikey960 LedControl application"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
