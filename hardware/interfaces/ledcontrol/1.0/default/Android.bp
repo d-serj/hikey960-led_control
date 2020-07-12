@@ -23,8 +23,8 @@ cc_binary {
     relative_install_path: "hw",
     vendor: true,
     srcs: [
-	"LedControl.cpp",
-	"service.cpp"
+        "LedControl.cpp",
+        "service.cpp"
     ],
     shared_libs: [
         "libhidlbase",

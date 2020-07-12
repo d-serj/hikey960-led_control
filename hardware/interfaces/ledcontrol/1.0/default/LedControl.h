@@ -25,7 +25,7 @@ public:
     LedControl();
     ~LedControl();
 
-    Return<ledcontrol::V1_0::LedState> ledSwitchState(ledcontrol::V1_0::Led led) override;
+    Return<LedState> ledSwitchState(Led led) override;
 
 private:
     const std::string ledSystemName = "user_led";
