@@ -1,0 +1,13 @@
+service vendor.gl.hardware.ledcontrol-1-0 /system/vendor/bin/hw/vendor.gl.hardware.ledcontrol@1.0-service
+    interface vendor.gl.hardware.ledcontrol@1.0::ILedControl default
+    class hal
+    user vendor_gl
+    group vendor_gl system 
+    oneshot
+    disabled
+
+on post-fs
+    chown vendor_gl vendor_gl /sys/class/leds/user_led1/trigger
+    chown vendor_gl vendor_gl /sys/class/leds/user_led2/trigger
+    chown vendor_gl vendor_gl /sys/class/leds/user_led3/trigger
+    chown vendor_gl vendor_gl /sys/class/leds/user_led4/trigger

@@ -1,0 +1,18 @@
+/*
+ * @file ILedControl.hal
+ */
+
+package vendor.gl.hardware.ledcontrol@1.0;
+
+interface ILedControl {
+
+    /**
+     * Switch the state of the given Led on the Hikey board
+     * 
+     * @param led .. number of the led to be switched
+     * @return status of the led: LED_ON if led was activated, LED_OFF if led was deactivated
+     *         LED_ERR if error occured
+     */
+    ledSwitchState(Led led) generates (LedState state);
+
+};
