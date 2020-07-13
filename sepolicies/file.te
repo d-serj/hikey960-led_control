@@ -1,0 +1,2 @@
+#Files that end with *.te are SELinux policy source files, which define domains and their labels.
+type hal_ledcontrol_default_exec, exec_type, vendor_file_type, file_type;
